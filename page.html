@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!--agregar metadatos-->
+    <link rel="stylesheet" href="estilo.css">
+    <title>ICVU</title>
+</head>
+
+<body>
+    <nav>
+        <select onchange="if (this.value) window.location.href=this.value">
+            <option value="index.html">Página portada</option>
+            <option value="page.html" selected>Página interior</option>
+        </select>
+    </nav>
+    <div class="container">
+        <header>
+            <!--el elemento hgroup ya no se usa; ver http://html5doctor.com/the-hgroup-element/ -->
+            <h1><a href="index.html">Casos de coronavirus por regiones en Chile</a></h1>
+        </header>
+        <section>
+            <h2>Coronavirus en Chile: Revisa las regiones con mayor y menor números de contagiados con Covid-19</h2>
+            <p>Revisa a continuación el número de casos de personas contagiados por el coronavirus Covid-19, el cual fue declarado como una pandemia por la Organización Mundial de la Salud.</p>
+            <p>Los casos de COVID en las regiones con el ICUV más alto y el ICUV más bajo:</p>
+            <!-- ver https://developer.mozilla.org/es/docs/Web/HTML/Elemento/dl -->
+            <dl>
+                <dt>Metropolitana</dt>
+                <dd>Casos nuevos: 295; Casos totales: 6083</dd>
+                <dt>Valparaíso</dt>
+                <dd>Casos nuevos: 18; Casos totales: 421</dd>
+                <dt>Maule</dt>
+                <dd>Casos nuevos: 12; Casos totales: 328</dd>
+            </dl>
+            <p>A la vista general, las diferentes regiones y el correspondiente ICUV:</p>
+
+            <table>
+                <tr>
+                    <th>Comuna</th>
+                    <th>Región</th>
+                    <th>ICVU 2019</th>
+                </tr>
+                <tr>
+                    <td>Vitacura</td>
+                    <td>Metropolitana</td>
+                    <td>75.59</td>
+                </tr>
+                <tr>
+                    <td>Concón</td>
+                    <td>Valparaíso</td>
+                    <td>64.45</td>
+                </tr>
+                <tr>
+                    <td>Talcahuano</td>
+                    <td>Biobío</td>
+                    <td>61.48</td>
+                </tr>
+                <tr>
+                    <td>Viña del Mar</td>
+                    <td>Valparaíso</td>
+                    <td>61.36</td>
+                </tr>                                               
+                 <tr>
+                    <td>Santiago</td>
+                    <td>Metropolitana</td>
+                    <td>59.27</td>
+                </tr> 
+                <tr>
+                    <td>Peñaflor</td>
+                    <td>Metropolitana</td>
+                    <td>55.09</td>
+                </tr>
+                <tr>
+                    <td>Quillota</td>
+                    <td>Valparaíso</td>
+                    <td>54.63</td>
+                </tr>
+                <tr>
+                    <td>Temuco</td>
+                    <td>Araucanía</td>
+                    <td>53.62</td>
+                </tr>
+                <tr>
+                    <td>Cerrillos</td>
+                    <td>Metropolitana</td>
+                    <td>47.82</td>
+                </tr>
+                <tr>
+                    <td>Ovalle</td>
+                    <td>Coquimbo</td>
+                    <td>46.53</td>
+                </tr>                                               
+                 <tr>
+                    <td>San Javier</td>
+                    <td>Maule</td>
+                    <td>38.11</td>
+                </tr>
+            </table>
+
+            <p>Nota: Como los casos cambian de un día para otro, la información puede estar ya desactualizada.  Puedes <a href="index.html">volver a la página portada</a>.</p>
+
+        </section>
+        <footer>
+            <hr>
+            <p>Jana Müller &copy; 2020 <span class="derecha">Séptima clase, enfocada en <abbr title="HyperText Markup Language">html</abbr></span></p>
+        </footer>
+    </div>
+</body>
+
+</html>
